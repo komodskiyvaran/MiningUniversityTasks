@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="PROJECT" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Exam1/Main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Practice10/BarberShop.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Practice10/Main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Practice10/Shop.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Practice10/SmallBusiness.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Practice11/Main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Practice12/SmallBusiness.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Practice13/BarberShop.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Practice13/Main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Practice13/Shop.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Practice13/SmallBusiness.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Practice7/Barbershop.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Practice7/CalcuIndicator.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Practice7/Shop.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Practice7/SmallBusiness.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Practice7/TestClass.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Practice8/JavaEnum.java" charset="UTF-8" />
+    <file url="PROJECT" charset="windows-1251" />
   </component>
 </project>
