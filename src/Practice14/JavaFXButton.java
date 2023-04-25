@@ -26,12 +26,12 @@ public class JavaFXButton extends Application {
 
     @Override
     public void start(Stage myStage){
-        myStage.setTitle("Практическая работа №14");
+        myStage.setTitle("Practice №14");
         FlowPane rootNode = new FlowPane(10,10);
         rootNode.setAlignment(Pos.CENTER);
         Scene myScene = new Scene(rootNode, 300, 100);
         myStage.setScene(myScene);
-        response = new Label("Выбери действие!");
+        response = new Label("Select an action!");
 
         Button buttonCreate = new Button("Create Objects");
         Button buttonPrint = new Button("Print Objects");
@@ -96,9 +96,9 @@ public class JavaFXButton extends Application {
             public void handle(ActionEvent actionEvent) {
                 String message = " ";
                 if (barber.isEmpty() || shop.isEmpty()){
-                    message = "ERROR! Один из списков пуст!";
+                    message = "ERROR! One of the lists is empty!";
                 }   else {
-                    // расчета вычисляемого показателя через лямбда-выражение.
+                    // calculation of the calculated indicator using a lambda expression
                     CalcIndicator func = (ArrayList<SmallBusiness> arr) -> {
                         String fname = arr.get(0).getName();
                         int maxSfaff = arr.get(0).getCountStaff();
@@ -112,19 +112,19 @@ public class JavaFXButton extends Application {
                     };
 
                     // #1
-                    message = "Показатель через блочную лямбду (поиск среди Shop): ";
+                    message = "\nIndicator via block lambda (search among Shop): ";
                     message += func.CalcIndicatorLambda(shop);
 
 
                     //#2
                     MyCalcCountStaffLink obj = new MyCalcCountStaffLink();
-                    message += "\n\nПоказатель через ссылку на метод (поиск среди BarberShop): ";
+                    message += "\n\nIndicator via a link to the method (search among BarberShop): ";
                     message += stringLambdaFunLink(obj::finName, barber);
                 }
 
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("NameShop MaxStuff");
-                alert.setHeaderText("Лямбда выражение");
+                alert.setHeaderText(null);
                 alert.setContentText(message);
                 alert.showAndWait();
 
