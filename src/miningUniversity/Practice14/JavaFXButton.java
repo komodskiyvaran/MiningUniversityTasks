@@ -26,7 +26,8 @@ public class JavaFXButton extends Application {
 
     @Override
     public void start(Stage myStage){
-        myStage.setTitle("Practice น14");
+        myStage.setTitle("Practice ยน14");
+
         FlowPane rootNode = new FlowPane(10,10);
         rootNode.setAlignment(Pos.CENTER);
         Scene myScene = new Scene(rootNode, 300, 100);
@@ -96,9 +97,11 @@ public class JavaFXButton extends Application {
             public void handle(ActionEvent actionEvent) {
                 String message = " ";
                 if (barber.isEmpty() || shop.isEmpty()){
+
                     message = "ERROR! One of the lists is empty!";
                 }   else {
                     // calculation of the calculated indicator using a lambda expression
+
                     CalcIndicator func = (ArrayList<SmallBusiness> arr) -> {
                         String fname = arr.get(0).getName();
                         int maxSfaff = arr.get(0).getCountStaff();

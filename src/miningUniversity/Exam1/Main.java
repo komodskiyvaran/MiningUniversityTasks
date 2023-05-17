@@ -15,9 +15,9 @@ public class Main {
     static ArrayList<String[]> globallist = new ArrayList<>();
     static long timeOnTest = 20 * 1000 * 60;
     static int attempt = 0;
-    static String quesFile = "src\\MiningUniversity.Exam1\\voprosi.txt";
-    static String ansFile = "src\\MiningUniversity.Exam1\\otveti.txt";
-    static String resFile = "src\\MiningUniversity.Exam1\\resultati.txt";
+    static String quesFile = "src\\miningUniversity\\Exam1\\voprosi.txt";
+    static String ansFile = "src\\miningUniversity\\Exam1\\otveti.txt";
+    static String resFile = "src\\miningUniversity\\Exam1\\resultati.txt";
 
     static {
         System.out.println("Аннотации в Java являются своего рода метками в коде,\n" +
@@ -35,7 +35,7 @@ public class Main {
         }
 
         String input;
-        Boolean condition = true;
+        boolean condition = true;
 
         while (condition) {
             System.out.println("\t\t1 - Задать время на тестирование. По умолчанию 20 минут. \n" +
@@ -68,7 +68,8 @@ public class Main {
         System.out.print("Введите новое значение времени в минутах: ");
         try {
             String newtime = scan.next();
-            timeOnTest = Integer.parseInt(newtime) * 1000 * 60;
+            timeOnTest = (long) Integer.parseInt(newtime) * 1000 * 60;
+
         } catch (Exception ex) {
             System.out.println("\nНеверный ввод, должно быть целое число минут.");
         }
@@ -104,8 +105,9 @@ public class Main {
                     if (UserAns[o].equals(listAns[o])) count++;
                 } else System.out.println("Введен недопустимый вариант.");
 
-                if(Time(startTime)) continue;
-                else break test;
+                    if (!Time(startTime)) {
+                        break test;
+                    }
                 }
             }
 
@@ -170,8 +172,9 @@ public class Main {
     public static void showResults(){
         System.out.println("\n№:\tDate:\t\tSurname\tName:\tTime: Ans: Mark:");
         for (String[] info: globallist) {
-            for (int i = 0; i < info.length; i++) {
-                System.out.print(info[i]+ "\t");
+
+            for (String s : info) {
+                System.out.print(s + "\t");
             }
             System.out.println();
         }
