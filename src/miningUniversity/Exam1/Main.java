@@ -69,6 +69,7 @@ public class Main {
         try {
             String newtime = scan.next();
             timeOnTest = (long) Integer.parseInt(newtime) * 1000 * 60;
+
         } catch (Exception ex) {
             System.out.println("\nНеверный ввод, должно быть целое число минут.");
         }
@@ -171,6 +172,7 @@ public class Main {
     public static void showResults(){
         System.out.println("\n№:\tDate:\t\tSurname\tName:\tTime: Ans: Mark:");
         for (String[] info: globallist) {
+
             for (String s : info) {
                 System.out.print(s + "\t");
             }

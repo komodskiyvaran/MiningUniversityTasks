@@ -55,7 +55,7 @@ class MyException extends Exception {
         detail = а;
     }
     public String toString() {
+
         return "miningUniversity.Practice3.MyException [" + detail + "]";
     }
 }
-
